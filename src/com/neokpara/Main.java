@@ -16,8 +16,6 @@ public class Main {
         int[] arrayToCheck = Arrays.stream(line.split(","))
                            .filter(str -> isInteger(str))
                            .mapToInt(Integer::parseInt).toArray();
-        System.out.println(arrayToCheck);
-
         // Question 1
         int val1 = smallestPositiveInteger(arrayToCheck);
         System.out.println(val1);
